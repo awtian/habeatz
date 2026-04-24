@@ -92,7 +92,7 @@ export function CasinoPage() {
           </p>
         </div>
 
-        {tokens.length === 0 ? (
+        {(tokens.length === 0 && !animating) ? (
           <EmptyState
             message="No Tokens available. Complete habits to earn Tokens."
             action={{
